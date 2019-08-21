@@ -237,10 +237,37 @@
     </nav>
 
     <!-- Header -->
-    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
-      <font class="h2 mb-0" style="color:white"><b><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DASHBOARD
-            COMPONENTS</em></b></font>
+    
+    <div class="header bg-gradient-primary pb-5 pt-5 pt-md-8">
+      <div class="container">  
+      <div class="card col-sm col-md-8 col-lg-3" style="margin: auto;">
+          <table class="table table-borderless table-responsive">
+              <thead>
+                <tr>
+                  <th scope="col"><b><font style="color: #172b4d">#</font><b></th>
+                  <th scope="col"><b><font style="color: #172b4d">Table of Contents</font><b></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><a href="#1">Dashboard Components</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Catalogue</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Challenges</td>
+                </tr>
+              </tbody>
+            </table>
+      </div></div><br><br>
+      <font class="h2 mb-0" style="color:white" id="1"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# DASHBOARD
+            COMPONENTS</b></font>
       <div class="container-fluid">
+        <br>
         <div class="header-body">
           <!-- Card stats -->
           <div class="row">
@@ -438,6 +465,7 @@
 
 
     <!-- Page content -->
+    <br><br><br><br><br>
     <div class="container-fluid mt--7">
       <div class="row">
         <div class="col-xl-8 mb-5 mb-xl-0">
@@ -867,7 +895,77 @@ var myBarChart = new Chart(ctx, {
     </script>
           </div>
         </div>-->
-      </div>
+      </div><br><br>
+      <div class="col-xl-4">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">
+                    Performance
+                  </h6>
+                  <h2 class="mb-0">Total orders</h2>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div class="chart">
+                <canvas id="chart-orderz" class="chart-canvas"></canvas>
+              </div>
+              <script>
+                var ctrx = document
+                  .getElementById("chart-orderz")
+                  .getContext("2d");
+                var chart = new Chart(ctrx, {
+                  // The type of chart we want to create
+                  type: "bar",
+
+                  // The data for our dataset
+                  data: {
+                    labels: [
+                      "January",
+                      "February",
+                      "March",
+                      "April",
+                      "May",
+                      "June",
+                      "July",
+                      "August"
+                    ],
+                    datasets: [{
+                        label: "Product A",
+                        backgroundColor: "#172b4d",
+                        borderColor: "#172b4d",
+                        data: [5, 10, 5, 2, 20, 30, 45, 55, 67, 78, 43, 54]
+                      },
+                      {
+                        label: "Product B",
+                        backgroundColor: "#f5365c",
+                        borderColor: "#f5365c",
+                        data: [10, 0, 15, 12, 0, 3, 45]
+                      }
+                    ]
+                  },
+                  options: {
+                    maintainAspectRatio: false,
+                    scales: {
+                      xAxes: [{
+                        barPercentage: 0.5,
+                        barThickness: 8,
+                        maxBarThickness: 20,
+                        minBarLength: 2000,
+                        gridLines: {
+                          offsetGridLines: true
+                        }
+                      }]
+                    }
+                  }
+                });
+              </script>
+            </div>
+          </div>
+        </div>
       <!-- Footer -->
       <footer class="footer">
         <div class="row align-items-center justify-content-xl-between">
