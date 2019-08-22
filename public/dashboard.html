@@ -343,7 +343,7 @@
             <div class="card-header bg-transparent">
               <div class="row align-items-center">
                 <div class="col">
-                  <img align="right" src="./img/icons/question-blue.png">
+                  <img align="right" src="./img/icons/question-blue.png" data-toggle="tooltip" data-placement="top" title="Graph representing total sales in the Present Year Vs the Previous Year ">
                   <h6 class="text-uppercase text-light ls-1 mb-1">
                     Overview
                   </h6>
@@ -527,7 +527,7 @@
             <div class="card-header bg-transparent">
               <div class="row align-items-center">
                 <div class="col">
-                  <img align="right" src="./img/icons/question-blue.png">
+                  <img align="right" src="./img/icons/question-blue.png" data-toggle="tooltip" data-placement="top" title="Month-wise sales comparision between the selected two products">
                   <h6 class="text-uppercase text-muted ls-1 mb-1">
                     Performance
                   </h6>
@@ -827,12 +827,21 @@
             <div class="card-header border-0">
               <div class="row align-items-center">
                 <div class="col">
+                    <img align="right" src="./img/icons/question-blue.png" data-toggle="tooltip" data-placement="top" title="Age-group of leads that bought the selected product">
                   <h3 class="mb-0">Customer Age Groups</h3>
+                  
                 </div>
-                <div class="col text-right">
-                  <a href="#!" class="btn btn-sm btn-primary">See all</a>
-                </div>
+                
               </div>
+              <br>
+              <select id="prod3" class="custom-select custom-select-md" onchange="age(this.value)">
+                  <option disabled>Select a product/scheme</option>
+                  <option selected value="1">Retail Loans</option>
+                  <option value="2">Education Loans</option>
+                  <option value="3">Agricultural Loans</option>
+                  <option value="4">Current/Saving Account (CASA)</option>
+                  <option value="5">Corporate Finance</option>
+                </select>
             </div>
             <hr />
             <div class="chart-container">
@@ -849,12 +858,12 @@
                 datasets: [{
                   fill: true,
                   backgroundColor: [
-                    "#2A85FB",
-                    "#8AB9FC",
-                    "#BAD4FD",
-                    "#172b4d"
+                    "#80b3ff",
+                    "#3385ff",
+                    "#005ce6",
+                    "#003d99"
                   ],
-                  data: [15, 55, 20, 10],
+                  data: [10, 50, 25, 15],
                   // Notice the borderColor
                   borderColor: ["white", "white"],
                   borderWidth: [2, 2]
@@ -873,10 +882,30 @@
                 data: data,
                 options: options
               });
+              function age(choice){
+                switch(choice){
+                  case '1': myBarChart.data.datasets[0].data = [10, 50, 25, 15];
+                            myBarChart.update();
+                            break;
+                  case '2': myBarChart.data.datasets[0].data = [55, 25, 15, 5];
+                            myBarChart.update();
+                            break;
+                  case '3': myBarChart.data.datasets[0].data = [0, 50, 25, 25];
+                            myBarChart.update();
+                            break;
+                  case '4': myBarChart.data.datasets[0].data = [15, 45, 35, 5];
+                            myBarChart.update();
+                            break;
+                  case '5': myBarChart.data.datasets[0].data = [3, 50, 25, 22];
+                            myBarChart.update();
+                            break;
+                }
+              }
             </script>
           </div>
         </div>
       </div>
+      
       <!-- Footer -->
       <footer class="footer">
         <div class="row align-items-center justify-content-xl-between">
