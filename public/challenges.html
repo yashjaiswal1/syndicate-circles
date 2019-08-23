@@ -249,20 +249,20 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel"><b>Publish a New Product</b></h3>
+              <h3 class="modal-title" id="exampleModalLabel"><b>Publish a New Challenge</b></h3>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <input class="form-control form-control-lg" type="text" placeholder="Product Title"><br>
+              <input class="form-control form-control-lg" type="text" placeholder="Challenge Title"><br>
               <div class="form-group">
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                  placeholder="Product Description"></textarea>
+                  placeholder="Challenge Description"></textarea>
               </div>
               <form>
                 <div class="form-group">
-                  <label for="exampleFormControlFile1">Upload product image</label>
+                  <label for="exampleFormControlFile1">Upload image</label>
                   <input type="file" class="form-control-file" id="exampleFormControlFile1">
                 </div>
               </form>
@@ -281,8 +281,6 @@
                 // Data Picker Initialization
                 $('.datepicker').pickadate();
               </script>
-              <input class="form-control form-control-sm" type="text"
-                placeholder="URL for more information (Read More button)">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-success" data-dismiss="modal">Publish</button>
@@ -300,11 +298,12 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h2 class="card-title">Monsoon Challenge</h2>
-                    <p class="card-text">In this season of rain, can you prove your mettle? Complete the Monsoon
+                    <h2 class="card-title" id='monsoon-title'>Monsoon Challenge</h2>
+                    <p class="card-text" id='monsoon-description'>In this season of rain, can you prove your mettle?
+                      Complete the Monsoon
                       Challenge by successfully converting 25 leads under the Agricultural Loans scheme.</p>
-                    <small class="text-muted"><b>Points: 100&nbsp;&nbsp;&nbsp;&nbsp;</b></small>
-                    <small class="text-muted"><b>Valid till: 31/10/2019</b></small><br>
+                    <small class="text-muted" id="monsoon-pnts"><b>Points: 100&nbsp;&nbsp;&nbsp;&nbsp;</b></small>
+                    <small class="text-muted" id="monsoon-valid"><b>Valid till: 31/10/2019</b></small><br>
                     <br><a href="#" class="btn btn-primary">Edit Challenge</a>
                     <br>
 
