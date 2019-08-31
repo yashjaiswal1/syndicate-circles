@@ -125,7 +125,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Email" type="email" />
+                    <input class="form-control" placeholder="Email" type="email" id="id"/>
                   </div>
                 </div>
                 <div class="form-group">
@@ -133,7 +133,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Password" type="password" />
+                    <input class="form-control" placeholder="Password" type="password" id="pass"/>
                   </div>
                 </div>
                 <div class="custom-control custom-control-alternative custom-checkbox">
@@ -142,10 +142,24 @@
                     <span class="text-muted">Remember me</span>
                   </label>
                 </div>
+                
                 <div class="text-center">
-                  <a href="dashboard.html"><button type="button" class="btn btn-primary my-4">
+                  <a href="#" id="link"><button type="button" class="btn btn-primary my-4" onclick="login()">
                       Sign in
                     </button></a>
+                    <script>
+                      function login(){  
+                        if(document.getElementById("id").value == 'admin' && document.getElementById("pass").value == 'admin123'){
+                          document.getElementById("link").href = "./dashboard.html";
+                        }
+                        else if(document.getElementById("id").value == 'child-admin' && document.getElementById("pass").value == 'admin456'){
+                          document.getElementById("link").href = "./child-dashboard.html";
+                        }
+                        else{
+                          alert("Enter correct ID or Password.\n\nMain Admin\nID: admin\nPassword: admin123\n\nRegional Admin\nID: child-admin\nPassword: admin456")
+                        }
+                      }
+                      </script>
                 </div>
               </form>
             </div>
