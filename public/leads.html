@@ -257,11 +257,11 @@
      <div class="container-fluid mt--6">
        <!-- Table -->
        
-<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css"/>
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css"/>
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
 <script>$(document).ready(function() {
-    $('#example').DataTable();
+    $('#example2').DataTable();
 } );</script>
 <div class="card">
         <div class="card-header">
@@ -273,7 +273,7 @@
 <div class="row">
     <div class="col-12">
     <div class="table-responsive py-4"><div class="container">
-    <table id="example" class="display table-flush" style="width:100%">
+    <table id="example2" class="display table-flush" style="width:100%">
         <thead>
             <tr>
                 <th>Lead Name</th>
@@ -284,7 +284,7 @@
                 <th>Date</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody><!--
             <tr>
                 <td>Abhishek Awasthi</td>
                 <td>Shreya Luthra</td>
@@ -405,7 +405,7 @@
                 <td>Education Loans</td>
                 <td>21/08/2019</td>
             </tr>
-            <!--
+            
             <tr>
                 <td>Jena Gaines</td>
                 <td>Office Manager</td>
@@ -781,8 +781,8 @@
                 <td>27</td>
                 <td>2011/01/25</td>
                 <td>$112,000</td>
-            </tr>
-        </tbody>-->
+            </tr>-->
+        </tbody>
         <tfoot>
             <tr>
                 <th>Lead Name</th>
@@ -796,6 +796,7 @@
     </table>
     </div></div></div>
 </div>
+
 </div>
        <!-- Footer -->
        <footer class="footer">
@@ -842,6 +843,16 @@
    <script src="./vendor/datatables.net-select/js/dataTables.select.min.js"></script>
    <!-- Argon JS -->
    <script src="js/argon.min.js?v=1.0.0"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/6.5.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+  <script src="/__/firebase/6.5.0/firebase-database.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+  <script src="./index.js"></script>
  </body>
  
  </html>
