@@ -3,8 +3,7 @@
 ## Installation
 
 1. You need `Node.js` (at least 10.x version) installed on your machine, if you don't have it, you should install it - download [link](https://nodejs.org/en/download/)
-2. [Clone the project from github](https://github.com/creativetimofficial/argon-dashboard-nodejs) or [download the archive](https://github.com/creativetimofficial/argon-dashboard-nodejs)
-3. `cd` to your downloaded Argon app
+2. Clone the project from github
 4. Install necessary dependencies:
     - **Via node `npm` package manager** - Run `npm install` on the project root
     - **Via `yarn` package manager** - Run `yarn install` on the project root
