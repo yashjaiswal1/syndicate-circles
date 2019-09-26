@@ -8,14 +8,14 @@
         content="An integrated software platform for smarter collaboration between sales agents and bank authorities">
     <title>Admin Dashboard</title>
     <!-- Favicon -->
-    <link href="../img/brand/favicon.png" rel="icon" type="image/png">
+    <link href="./img/brand/favicon.png" rel="icon" type="image/png">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <!-- Icons -->
-    <link href="../vendor/nucleo/css/nucleo.css" rel="stylesheet">
-    <link href="../vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="./vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="./vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <!-- Argon CSS -->
-    <link type="text/css" href="../css/argon.min.css?v=1.0.0" rel="stylesheet">
+    <link type="text/css" href="./css/argon.min.css?v=1.0.0" rel="stylesheet">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
 </head>
@@ -56,7 +56,7 @@
                         aria-expanded="false">
                         <div class="media align-items-center">
                             <span class="avatar avatar-sm rounded-circle">
-                                <img alt="Image placeholder" src="../img/theme/team-1-800x800.jpg">
+                                <img alt="Image placeholder" src="./img/theme/team-1-800x800.jpg">
                             </span>
                         </div>
                     </a>
@@ -81,7 +81,7 @@
                             <span>Support</span>
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="../index.html" class="dropdown-item logout">
+                        <a href="./index.html" class="dropdown-item logout">
                             <i class="ni ni-user-run"></i>
                             <span class="logout">Logout</span>
                         </a>
@@ -143,6 +143,11 @@
                         </li>
             
                         <li class="nav-item">
+                                <a class="nav-link" href="./constraints_child.html">
+                                    <i class="ni ni-ui-04 text-orange"></i> Constraints
+                                </a>
+                        </li>
+                        <li class="nav-item">
                              <a class="nav-link" href="./leads_child.html"> 
                                  <i class="ni ni-single-02 text-green"></i> Leads
                              </a>
@@ -161,12 +166,7 @@
                                 <a class="nav-link" href="./train_child.html">
                                     <i class="ni ni-pin-3 text-orange"></i> Training Page
                                 </a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="./upload_child.html">
-                                    <i class="ni ni-cloud-upload-96 text-info"></i> Upload DB
-                                </a>
-                        </li>          
+                        </li>                
                     </ul>
                 <!-- Divider -->
                 <hr class="my-3">
@@ -200,7 +200,7 @@
         <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
             <div class="container-fluid">
                 <!-- Brand -->
-                <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="/">Historical Data</a>
+                <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="/">Upload Database</a>
 
                 <!-- Form -->
                 <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
@@ -220,7 +220,7 @@
                             aria-expanded="false">
                             <div class="media align-items-center">
                                 <span class="avatar avatar-sm rounded-circle">
-                                    <img alt="Image placeholder" src="../img/theme/team-4-800x800.jpg">
+                                    <img alt="Image placeholder" src="./img/theme/team-4-800x800.jpg">
                                 </span>
                                 <div class="media-body ml-2 d-none d-lg-block">
                                     <span class="mb-0 text-sm font-weight-bold">Admin</span>
@@ -248,7 +248,7 @@
                                 <span>Support</span>
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a href="../index.html" class="dropdown-item logout">
+                            <a href="./index.html" class="dropdown-item logout">
                                 <i class="ni ni-user-run"></i>
                                 <span class="logout">Logout</span>
                             </a>
@@ -276,163 +276,56 @@
                                 <div class="row align-items-center">
                                     <div class="col">
                                             <div class="col text-right">
-                                                    <img align="right" src="../img/icons/question-blue.png" data-toggle="tooltip" data-placement="top" title="Historical data based on products corresponding to their set priorities">
+                                                    <img align="right" src="./img/icons/question-blue.png" data-toggle="tooltip" data-placement="top" title="Upload Bank DB for automatic point allocation to Agents">
                                             </div>
-                                        <h3 class="mb-0">Historical Data</h3><br>
-                                        
-                                        <select id="year" class="custom-select custom-select-sm" onchange="change()">
-                                            <option disabled>Select financial year</option>
-                                            <option selected value="1">2019-20</option>
-                                            <option value="2">2018-19</option>
-                                            <option value="3">2017-18</option>
-                                            <option value="4">2016-17</option>
-                                            <option value="5">2015-16</option>
-                                        </select>
-                                        <br><br>
-                                        <select id="month" class="custom-select custom-select-sm" onchange="go()">
-                                                <option disabled>Select month</option>
-                                                <option selected value="January">January</option> 
-                                                <option value="February">February</option>
-                                                <option value="March">March</option>
-                                                <option value="April">April</option>
-                                                <option value="May">May</option>
-                                                <option value="June">June</option>
-                                                <option value="July">July</option>
-                                                <option value="August">August</option>
-                                                <option value="September">September</option>
-                                                <option value="October">October</option>
-                                                <option value="November">November</option>
-                                                <option value="December">December</option>
-                                        </select>
-                                    </div>
-                                </div><br>
-                                <h2 id='topper'>Top product in January: Education Loans</h2>
-                            </div>
-                            <script>
-                              priority = ['Low','Medium','High'];
-                              function getRandomInt(max) {
-                               return Math.floor(Math.random() * Math.floor(max));
-                              }
-                              console.log("NUM = ", getRandomInt(3));
-                              
-                              function change(){
-                                document.getElementById('p1').innerText = priority[getRandomInt(3)];
-                                document.getElementById('p2').innerText = priority[getRandomInt(3)];
-                                document.getElementById('p3').innerText = priority[getRandomInt(3)];
-                                document.getElementById('p4').innerText = priority[getRandomInt(3)];
-                                document.getElementById('p5').innerText = priority[getRandomInt(3)];
-                                document.getElementById('p6').innerText = priority[getRandomInt(3)];
-                                document.getElementById('p7').innerText = priority[getRandomInt(3)];
-                                document.getElementById('p8').innerText = priority[getRandomInt(3)];
-                              }
-
-                              function go(){
-                              change();
-                              switch(document.getElementById('month').value){
-                                case 'January': document.getElementById('topper').innerText = 'Top product in ' + document.getElementById('month').value + ': Education Loans';
-                                                break;
-                                case 'February': document.getElementById('topper').innerText = 'Top product in ' + document.getElementById('month').value + ': Corporate Finance';
-                                                 break;
-                                case 'March': document.getElementById('topper').innerText = 'Top product in ' + document.getElementById('month').value + ': Agricultural Loans';
-                                              break;
-                                case 'April': document.getElementById('topper').innerText = 'Top product in ' + document.getElementById('month').value + ': Current / Saving Account (CASA)';
-                                              break;
-                                case 'May': document.getElementById('topper').innerText = 'Top product in ' + document.getElementById('month').value + ': Term (Fixed) Deposit';
-                                            break;
-                                case 'June': document.getElementById('topper').innerText = 'Top product in ' + document.getElementById('month').value + ': Corporate Finance';
-                                             break;
-                                case 'July': document.getElementById('topper').innerText = 'Top product in ' + document.getElementById('month').value + ': Priority Sector Loans';
-                                             break;
-                                case 'August': document.getElementById('topper').innerText = 'Top product in ' + document.getElementById('month').value + ': SME Loans';
-                                               break;
-                                case 'September': document.getElementById('topper').innerText = 'Top product in ' + document.getElementById('month').value + ': Education Loans';
-                                                  break;
-                                case 'October': document.getElementById('topper').innerText = 'Top product in ' + document.getElementById('month').value + ': Agricultural Loans';
-                                                break; 
-                                case 'November': document.getElementById('topper').innerText = 'Top product in ' + document.getElementById('month').value + ': SME Loans';
-                                                 break;
-                                case 'December': document.getElementById('topper').innerText = 'Top product in ' + document.getElementById('month').value + ': Current / Saving Account (CASA)';
-                                                 break;
-                              }
-                            }
-                            </script>
-                            <div class="table-responsive">
-                                <!-- Projects table -->
-                                <table class="table align-items-center table-flush">
-                                    <thead class="thead-light">
-                                        <tr>
-                                            <th scope="col">Product</th>
-                                            <th scope="col">Priority</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">
-                                                Education Loans
-                                            </th>
-                                            <td id="p1">
-                                                High
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                Retail Loans
-                                            </th>
-                                            <td id="p2">
-                                                High
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                Agricultural Loans
-                                            </th>
-                                            <td id="p3">
-                                                Medium
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                Current/Saving Account (CASA)
-                                            </th>
-                                            <td id="p4">
-                                                Low
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                Corporate Finance
-                                            </th>
-                                            <td id="p5">
-                                                Medium
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                SME Loans
-                                            </th>
-                                            <td id="p6">
-                                                High
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                Term (Fixed) Deposit
-                                            </th>
-                                            <td id="p7">
-                                                Medium
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                Priority Sector Loans
-                                            </th>
-                                            <td id="p8">
-                                                Low
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                                        <h3 class="mb-0">Upload Bank DB </h3><br>
+                                        <input type="file" id="input-excel" /><br><br>
+                                            <div id="wrapper">
+                                                <style>
+                                                        table, th, td {
+                                                          border: 3px solid #EAECEF;
+                                                        }
+                                                </style>
+                                            </div>
+                                    
+                                    <script src="jquery-3.4.1.min.js"></script>
+                                    <script>
+                                            $('#input-excel').change(function(e){
+                                                    var reader = new FileReader();
+                                                    reader.readAsArrayBuffer(e.target.files[0]);
+                                                    reader.onload = function(e) {
+                                                            var data = new Uint8Array(reader.result);
+                                                            var wb = XLSX.read(data,{type:'array'});
+                                                            var htmlstr = XLSX.write(wb,{sheet:"sheet no1", type:'binary',bookType:'html'});
+                                                            $('#wrapper')[0].innerHTML += htmlstr;
+                                                            var temp1 = document.getElementById("sjs-A1").innerHTML;
+                                                            document.getElementById("sjs-A1").innerHTML = '<b>' + temp1 + ' </b>';
+                                    
+                                                            var temp2 = document.getElementById("sjs-B1").innerHTML;
+                                                            document.getElementById("sjs-B1").innerHTML = '<b>' + temp2 + ' </b>';
+                                    
+                                                            var temp3 = document.getElementById("sjs-C1").innerHTML;
+                                                            document.getElementById("sjs-C1").innerHTML = '<b>' + temp3 + ' </b>';
+                                                            
+                                                            var temp4 = document.getElementById("sjs-D1").innerHTML;
+                                                            document.getElementById("sjs-D1").innerHTML = '<b>' + temp4 + ' </b>';
+                                                            
+                                                            var temp5 = document.getElementById("sjs-E1").innerHTML;
+                                                            document.getElementById("sjs-E1").innerHTML = '<b>' + temp5 + ' </b>';
+                                                            
+                                                            var temp6 = document.getElementById("sjs-F1").innerHTML;
+                                                            document.getElementById("sjs-F1").innerHTML = '<b>' + temp6 + ' </b>';
+                                                            
+                                                            var temp7 = document.getElementById("sjs-G1").innerHTML;
+                                                            document.getElementById("sjs-G1").innerHTML = '<b>' + temp7 + ' </b>';
+                                                            
+                                                            console.log("HEYO");
+                                                            //var temp2 = document.getElementById("sjs-A1").innerHTML;
+                                                            //document.getElementById("sjs-B1").innerHTML = '<b>' + temp2 + '</b>';
+                                    
+                                                    }
+                                            });
+                                    </script>
                         </div>
                     </div>
                 </div>
@@ -440,20 +333,20 @@
                 </div>
             <div class="col-sm-12 col-md-12 col-lg-6">
                 <br>    
-
-                </div>
+            </div>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="row align-items-center justify-content-xl-between">
-            <div class="col-xl-6">
+            
+                <div class="row">
+                <div class="col">
                 <div class="copyright text-center text-xl-left text-muted">
                     An integrated platform for
-                    <a href="https://www.syndicatebank.in/home" class="font-weight-bold ml-1" target="_blank">Syndicate
-                        Bank</a>
+                    <a href="https://www.syndicatebank.in/home" class="font-weight-bold ml-1" target="_blank"> &NonBreakingSpace;Syndicate Bank</a>
                 </div>
-            </div>
-            <div class="col-xl-6">
+
+            
                 <ul class="nav nav-footer justify-content-center justify-content-xl-end">
                     <li class="nav-item">
                         <a href="https://old.syndicatebank.in/english/Locators.aspx" class="nav-link"
@@ -468,7 +361,9 @@
                         <a href="https://forms.gle/KM4rprbUhiwdvmzK8" class="nav-link" target="_blank">Feedback</a>
                     </li>
                 </ul>
-            </div>
+                </div>
+                </div>
+            
         </div>
     </footer>
 
@@ -504,24 +399,26 @@
         var bodyElement = document.querySelector('body');
         addEvent('click', bodyElement, logout);
     </script>
-
 </div>
 
 
     <!-- Core -->
-    <script src="../vendor/jquery/dist/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendor/jquery/dist/jquery.min.js"></script>
+    <script src="./vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Docs JS -->
-    <script src="../vendor/anchor-js/anchor.min.js"></script>
-    <script src="../vendor/clipboard/dist/clipboard.min.js"></script>
-    <script src="../vendor/holderjs/holder.min.js"></script>
-    <script src="../vendor/prismjs/prism.js"></script>
+    <script src="./vendor/anchor-js/anchor.min.js"></script>
+    <script src="./vendor/clipboard/dist/clipboard.min.js"></script>
+    <script src="./vendor/holderjs/holder.min.js"></script>
+    <script src="./vendor/prismjs/prism.js"></script>
+    <!-- Sheet.js dependencies -->
+    
+    <script lang="javascript" src="./xlsx.full.min.js"></script>
     <!-- Optional JS -->
-    <script src="../vendor/chart.js/dist/Chart.min.js"></script>
-    <script src="../vendor/chart.js/dist/Chart.extension.js"></script>
-    <script src="../vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="./vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="./vendor/chart.js/dist/Chart.extension.js"></script>
+    <script src="./vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
     <!-- Argon JS -->
-    <script src="../js/argon.min.js?v=1.0.0"></script>
+    <script src="./js/argon.min.js?v=1.0.0"></script>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="/__/firebase/6.5.0/firebase-app.js"></script>
 
@@ -531,7 +428,7 @@
 
   <!-- Initialize Firebase -->
   <script src="/__/firebase/init.js"></script>
-  <script src="../index.js"></script>
+  <script src="./index.js"></script>
 
 </body>
 

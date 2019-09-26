@@ -32,9 +32,18 @@ function fnClickAddRow(obj) {
         obj.email,
         obj.leadConverted,
         obj.lead,
-        diff + "%"
+        diff + "%",
+        obj.payment
          ] );
+    
 }
+
+// (1.5) Real-time updation of payment request
+/*dbPayment = firebase.database().ref().child('Agent');
+
+dbPayment.on("child_changed",function(snap){
+    snap.val().payment.update();
+});*/
 
 // (2) Add new field in dataTable (Leads) upon logging the lead data from the mobile app and display it in the dataTable
 var dbRefLead = firebase.database().ref().child("Leads");
@@ -72,3 +81,14 @@ function changePriority(){
     dbRefProd.child("Products").child("SME_Loans").child("priority").set(document.getElementById("prod6").value);
 
 }
+
+
+// (4) Points Conversion Rate
+
+function pointsConversion(){
+    dbRefProd.child("Rate").set(document.getElementById("encashment").value)
+}
+
+dbRefProd.child("Rate").on("value", function(snapshot){
+    document.getElementById("encashment").value = snapshot.val();
+});

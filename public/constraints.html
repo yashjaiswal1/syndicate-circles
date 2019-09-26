@@ -553,6 +553,46 @@
                             </table>
                         </div>
                     </div>
+                <br><br>
+                <div class="card border-primary mb-3" >
+                            
+                        <div class="card-header"><b>Verification Tick</b>&NonBreakingSpace;&NonBreakingSpace; <img src="./img/icons/tick.png"></div>
+                        <div class="card-body text-primary">
+                          <p class="card-text"><b>The Verification Tick is a symbol of legitimacy that is awarded to an agent upon successful conversion of a certain number of customers as specified by the Admin</b></p>
+                          <h4 class="card-title"><b>Set number of successful conversions required for earning a verification tick</b></h4>
+                          <form>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="number"
+                                            class="form-control form-control-alternative"
+                                            placeholder="Enter here" min="0" step="5" value="100"/>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                      </div>
+                <!--<div class="card shadow">
+                        <div class="card-header border-0" >
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <h3 class="mb-0">Points-to-₹ Conversion Rate</h3>
+                                </div>
+                                <div class="col text-right">
+                                        <img align="right" src="./img/icons/question-blue.png" data-toggle="tooltip" data-placement="top" title="Set no. of successful lead conversions required to attain each level by the agent">
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="row container">
+                                <h1> &NonBreakingSpace;&NonBreakingSpace; 1 Point = ₹</h1>
+                                <div class="col-4">
+                                        <input type="number"
+                                        class="form-control form-control-alternative"
+                                        placeholder="Enter here (in ₹)" min="0" step="5"  />
+                                </div>
+                        </div>
+                        <br>
+                    </div>//-->
                 </div>
             <div class="col-sm-12 col-md-12 col-lg-6">
                 <br>    
@@ -666,32 +706,48 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </div><br>
+                    <div class="card shadow">
+                            <div class="card-header border-0" >
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h3 class="mb-0">Points-to-₹ Conversion Rate</h3>
+                                    </div>
+                                    <div class="col text-right">
+                                            <img align="right" src="./img/icons/question-blue.png" data-toggle="tooltip" data-placement="top" title="Points to Rupee conversion rate will reflected onto Agent-side app as well">
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="row container">
+                                    <h1> &NonBreakingSpace;&NonBreakingSpace; 1 Point = ₹</h1>
+                                    <div class="col-4">
+                                            <input type="number"
+                                            class="form-control form-control-alternative"
+                                            placeholder="Enter here (in ₹)" min="0" step="5" id="encashment" onchange="pointsConversion()">
+                                    </div>
+                            </div>
+                            <br>
+                        </div>
+                    <!--<div class="card border-primary mb-3" >
+                            
+                            <div class="card-header"><b>Verification Tick</b>&NonBreakingSpace;&NonBreakingSpace; <img src="./img/icons/tick.png"></div>
+                            <div class="card-body text-primary">
+                              <p class="card-text"><b>The Verification Tick is a symbol of legitimacy that is awarded to an agent upon successful conversion of a certain number of customers as specified by the Admin</b></p>
+                              <h4 class="card-title"><b>Set number of successful conversions required for earning a verification tick</b></h4>
+                              <form>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="number"
+                                                class="form-control form-control-alternative"
+                                                placeholder="Enter here" min="0" step="5" value="100"/>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                          </div>//-->
                 </div></div>
         </div><br>
-        <div class="container-fluid">
-            <div class="row">
-                    <div class="col-sm-12">
-                            <div class="card border-primary mb-3" >
-                                    <div class="card-header"><b>Verification Tick</b>&NonBreakingSpace;&NonBreakingSpace; <img src="./img/icons/tick.png"></div>
-                                    <div class="card-body text-primary">
-                                      <p class="card-text"><b>The Verification Tick is a symbol of legitimacy that is awarded to an agent upon successful conversion of a certain number of customers as specified by the Admin</b></p>
-                                      <h4 class="card-title"><b>Set number of successful conversions required for earning a verification tick</b></h4>
-                                      <form>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <input type="number"
-                                                        class="form-control form-control-alternative"
-                                                        placeholder="Enter here" min="0" step="5" value="100"/>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                  </div>
-                    </div>
-            </div>
-        </div>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="row align-items-center justify-content-xl-between">
