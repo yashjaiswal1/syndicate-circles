@@ -2,6 +2,8 @@
 An integrated software platform for smarter collaboration between sales agents and bank authorities using real-time updates and, crowd-sourcing methods.
 The platform consists of a Web Dashboard for the Bank Admins and an agent-side Android application.
 
+This project was presented in the national-level SYND iNNOVATE hackathon where our team bagged the 2nd position.
+
 **Repo for Android Application:** 
 
 ## Log-In using the respective Admin credentials:
