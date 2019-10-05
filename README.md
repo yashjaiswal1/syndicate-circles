@@ -1,3 +1,7 @@
+<p align="center">
+<img alt="Syndicate Circles logo" width="128" height="128" src="./public/img/brand/logo.png">
+</p>
+
 # Syndicate Circles
 An integrated software platform for smarter collaboration between sales agents and bank authorities using real-time updates and, crowd-sourcing methods.
 The platform consists of a Web Dashboard for the Bank Admins and an agent-side Android application.
