@@ -391,6 +391,284 @@
    </div></div></div>
 </div>
 </div>
+<br>
+<div class="row">
+    <div class="col container">
+        <div class='card container'>
+            <br>
+            <div class="row container">
+              <h3> &NonBreakingSpace;&NonBreakingSpace; Number of leads converted for </h3>
+              <div class="col-3">
+                <select id="prodz" class="custom-select custom-select-sm" onchange="leadConv()">
+                  <option disabled>Select a product</option>
+                  <option value="1">Retail Loans</option>
+                  <option value="2">Education Loans</option>
+                  <option value="3">Agricultural Loans</option>
+                  <option selected value="4">Current / Saving Account (CASA)</option>
+                  <option value="5">Term (Fixed) Deposit </option>
+                  <option value="6">SME Loans</option>
+                  <option value="7">Priority Sector Loans</option>
+                  <option value="8">Corporate Finance</option>
+                </select>
+              </div>
+              <h3>by the Agent </h3>
+              <div class="col-3">
+                  <select id="mth" class="custom-select custom-select-sm" onchange="leadConv()">
+                    <option disabled>Select a month</option>
+                    <option selected value="1">Aayush Jain</option>
+                    <option value="2">Shubham Saini</option>
+                    <option value="3">Jai Maheshwari</option>
+                    <option value="4">Fazal Rehman</option>
+                    <option value="5">Hardeep Singh</option>
+                    <option value="6">Fazal Rehman</option>
+                    <option value="7">Shreya Luthra</option>
+                    <option value="8">Anoop Jain</option>
+                    <option selected value="9">Sejal Dixit</option>
+                    <option value="10">Pratyush Sharma</option>
+                    <option value="11">Yashvi Patle</option>
+                    <option value="12">Yash Jaiswal</option>
+                  </select>
+                </div>
+              <h3>: &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</h3>
+                <b>
+                <div class="card border-primary mb-3"><h3 id="num">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;<font style="color: blue;">273</font>&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</h3></div>
+              </b>
+            </div>
+            <br>
+            
+          </div>
+    </div>
+  </div>
+  <script>
+      function leadConv(){
+        var prod = document.getElementById("prodz").value;
+        var month = document.getElementById("mth").value;
+        if(month == '1'){
+          if(prod == '1'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 36 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '2'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 42 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '3'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 27 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '4'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 80 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '5'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 12 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '6'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 93 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '7'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 10 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '8'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 32 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }
+        }
+        else if(month == '2'){
+          if(prod == '1'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 36 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '2'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 24 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '3'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 94 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '4'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 63 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '5'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 35 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '6'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 85 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '7'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 21 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '8'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 40 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }
+        }
+        else if(month == '3'){
+          if(prod == '1'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 10 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '2'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 25 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '3'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 63 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '4'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 80 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '5'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 30 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '6'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 17 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '7'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 91 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '8'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 50 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }
+        }else if(month == '4'){
+          if(prod == '1'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 36 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '2'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 48 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '3'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 49 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '4'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 36 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '5'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 25 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '6'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 48 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '7'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 11 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '8'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 19 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }
+        }else if(month == '5'){
+          if(prod == '1'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 36 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '2'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 24 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '3'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 44 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '4'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 33 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '5'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 12 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '6'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 23 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '7'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 65 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '8'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 59 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }
+        }else if(month == '6'){
+          if(prod == '1'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 35 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '2'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 24 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '3'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 62 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '4'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 31 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '5'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 29 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '6'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 85 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '7'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 22 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '8'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 18 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }
+        }else if(month == '7'){
+          if(prod == '1'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 30 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '2'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 74 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '3'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 26 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '4'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 19 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '5'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 16 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '6'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 27 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '7'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 21 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '8'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 10 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }
+        }else if(month == '8'){
+          if(prod == '1'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 36 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+            
+          }else if(prod == '2'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 17 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '3'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 18 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '4'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 10 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '5'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 55 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '6'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 79 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '7'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 21 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '8'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 49 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }
+        }else if(month == '9'){
+          if(prod == '1'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 14 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+            
+          }else if(prod == '2'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 61 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '3'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 84 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '4'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 75 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '5'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 19 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '6'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 95 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '7'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 21 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '8'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 39 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }
+        }else if(month == '10'){
+          if(prod == '1'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 37 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+            
+          }else if(prod == '2'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 87 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '3'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 76 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '4'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 38 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '5'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 90 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '6'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 17 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '7'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 51 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '8'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 11 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }
+        }else if(month == '11'){
+          if(prod == '1'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 57 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+            
+          }else if(prod == '2'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 92 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '3'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 24 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '4'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 73 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '5'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 65 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '6'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 32 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '7'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 84 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '8'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 10 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }
+        }else if(month == '12'){
+          if(prod == '1'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 12 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+            
+          }else if(prod == '2'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 45 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '3'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 12 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '4'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 37 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '5'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 73 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '6'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 38 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '7'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 93 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }else if(prod == '8'){
+            document.getElementById("num").innerHTML = '<font style="color: blue;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;' + 19 + '&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font>';
+          }
+        }
+      }
+      </script>
       <!-- Footer -->
       <footer class="footer">
            <div class="row align-items-center justify-content-xl-between">

@@ -200,7 +200,7 @@
         <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
             <div class="container-fluid">
                 <!-- Brand -->
-                <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="/">Upload Database</a>
+                <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="/">POINT ALLOCATION</a>
 
                 <!-- Form -->
                 <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
@@ -276,65 +276,61 @@
                                 <div class="row align-items-center">
                                     <div class="col">
                                             <div class="col text-right">
-                                                    <img align="right" src="../img/icons/question-blue.png" data-toggle="tooltip" data-placement="top" title="Upload Bank DB for automatic point allocation to Agents">
+                                                    <img align="right" src="../img/icons/question-blue.png" data-toggle="tooltip" data-placement="top" title="Assign points to agents automatically by confirming the status of leads">
                                             </div>
-                                        <h3 class="mb-0">Upload Bank DB </h3><br>
-                                        <input type="file" id="input-excel" /><br><br>
-                                            <div id="wrapper">
-                                                <style>
-                                                        table, th, td {
-                                                          border: 3px solid #EAECEF;
-                                                        }
-                                                </style>
+                                        <h1 class="mb-0">Point Allocation System</h1><br>
+                                        <hr>
+                                        <div class="row">
+                                        <div class="col-2">
+                                            <h3>Lead Name:</h3>
+                                        </div>
+                                        <div class="col-4">
+                                                <select id="leadz" class="custom-select custom-select-sm" onchange="refresher()">
+                                                  <option disabled>Select a Lead</option>
+                                                  <option value="1">Abhishek Awasthi</option>
+                                                  <option value="2">Ashton Cox</option>
+                                                  <option value="3">Cedric Kelly</option>
+                                                  <option value="4">Aishwarya Chapte</option>
+                                                  <option value="5">Vijay</option>
+                                                  <option value="6">Siddharth Mishra</option>
+                                                  <option selected value="7">Harish Raj</option>
+                                                  <option value="8">Sayantan Bose</option>
+                                                  <option value="9">Shreyas Jain</option>
+                                                  <option value="10">Rishina Sharma</option>
+                                                  <option value="11">Yuvraj Choudhary</option>
+                                                  <option value="12">Mudit Jaiswal</option>
+                                                  <option value="13">Jasmine Bajaj</option>
+                                                  <option value="14">Herrod Chandler</option>
+                                                  <option value="15" id="dynamo"></option>
+                                                </select>
+                                        </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <h3>Status:</h3>
                                             </div>
+                                            <div class="col-3">
+                                                <button id="confirmation" type="button" class="btn btn-success btn-sm" onclick="demo()">Confirm Status</button>
+                                            </div>
+                                        </div>
+                                        <script>
+                                            
+                                        </script>
                                     
-                                    <script src="../jquery-3.4.1.min.js"></script>
-                                    <script>
-                                            $('#input-excel').change(function(e){
-                                                    var reader = new FileReader();
-                                                    reader.readAsArrayBuffer(e.target.files[0]);
-                                                    reader.onload = function(e) {
-                                                            var data = new Uint8Array(reader.result);
-                                                            var wb = XLSX.read(data,{type:'array'});
-                                                            var htmlstr = XLSX.write(wb,{sheet:"sheet no1", type:'binary',bookType:'html'});
-                                                            $('#wrapper')[0].innerHTML += htmlstr;
-                                                            var temp1 = document.getElementById("sjs-A1").innerHTML;
-                                                            document.getElementById("sjs-A1").innerHTML = '<b>' + temp1 + ' </b>';
-                                    
-                                                            var temp2 = document.getElementById("sjs-B1").innerHTML;
-                                                            document.getElementById("sjs-B1").innerHTML = '<b>' + temp2 + ' </b>';
-                                    
-                                                            var temp3 = document.getElementById("sjs-C1").innerHTML;
-                                                            document.getElementById("sjs-C1").innerHTML = '<b>' + temp3 + ' </b>';
-                                                            
-                                                            var temp4 = document.getElementById("sjs-D1").innerHTML;
-                                                            document.getElementById("sjs-D1").innerHTML = '<b>' + temp4 + ' </b>';
-                                                            
-                                                            var temp5 = document.getElementById("sjs-E1").innerHTML;
-                                                            document.getElementById("sjs-E1").innerHTML = '<b>' + temp5 + ' </b>';
-                                                            
-                                                            var temp6 = document.getElementById("sjs-F1").innerHTML;
-                                                            document.getElementById("sjs-F1").innerHTML = '<b>' + temp6 + ' </b>';
-                                                            
-                                                            var temp7 = document.getElementById("sjs-G1").innerHTML;
-                                                            document.getElementById("sjs-G1").innerHTML = '<b>' + temp7 + ' </b>';
-                                                            
-                                                            console.log("HEYO");
-                                                            //var temp2 = document.getElementById("sjs-A1").innerHTML;
-                                                            //document.getElementById("sjs-B1").innerHTML = '<b>' + temp2 + '</b>';
-                                    
-                                                    }
-                                            });
-                                    </script>
                         </div>
                     </div>
                 </div>
             </div>
-                </div>
+            </div>
             <div class="col-sm-12 col-md-12 col-lg-6">
                 <br>    
             </div>
-
+            <script>
+                function refresher(){
+                    document.getElementById("confirmation").innerHTML = 'Confirm Status'; 
+                }
+            </script>
     <!-- Footer -->
     <footer class="footer">
         <div class="row align-items-center justify-content-xl-between">

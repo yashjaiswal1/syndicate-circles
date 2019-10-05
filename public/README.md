@@ -1,2 +1,0 @@
-# Syndicate Circles
-### Admin Dashboard
