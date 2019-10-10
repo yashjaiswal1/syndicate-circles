@@ -8,7 +8,7 @@ The platform consists of a Web Dashboard for the Bank Admins and an agent-side A
 
 This project was presented in the national-level SYND iNNOVATE hackathon where our team bagged the 2nd position.
 
-**Repo for Android Application:** 
+**Repo for Android Application:** https://github.com/shubham4007/Syndicate_circles_Android_app
 
 ## Log-In using the respective Admin credentials:
 
