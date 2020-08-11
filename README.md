@@ -10,16 +10,6 @@ This project was presented in the national-level SYND iNNOVATE hackathon where o
 
 **Repo for Android Application:** https://github.com/shubham4007/Syndicate_circles_Android_app
 
-## Log-In using the respective Admin credentials:
-
-**Main Admin (Parent)**  
-**ID:** mainadmin  
-**Password:** admin123
-
-**Regional Admin (Child)**  
-**ID:** childadmin  
-**Password:** admin456
-
 ## Google Assisstant integration (in-progress)
 To invoke the action, say: "Talk to syndicate circles"
 
@@ -28,4 +18,4 @@ To list all products, say: "List all products" or anything else of similar meani
 This uses sophesticated NLU algorithms and webhooks to analyse statements and to provide the specified fulfillment to user based on their intents.
 
 ## Demo
-**Link:** https://syndcircles.firebaseapp.com/
+**Link:** https://syndcircles.firebaseapp.com/dashboard.html
